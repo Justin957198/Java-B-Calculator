@@ -49,7 +49,7 @@ public class Logic {
         {
             if(operators[i] == '+') // checks if the operator is a plus sign
             {
-                if(notFirst) // if this isnt the first operation the next number is addeed to the result
+                if(notFirst) // if this isn't the first operation the next number is added to the result
                 {
                     result = result + numbers[iterator];
                     iterator++;
