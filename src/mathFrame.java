@@ -18,7 +18,7 @@ public class mathFrame extends Logic implements ActionListener {
     JButton bEquals; JButton decimal; JButton clear;
     JPanel upper;
     JPanel lower;
-    ImageIcon image = new ImageIcon("C:\\Users\\Justin Johnson\\IdeaProjects\\Calculator\\src\\MathIcon.png");
+    ImageIcon image = new ImageIcon(getClass().getResource("MathIcon.png"));
     mathFrame()
     {
 

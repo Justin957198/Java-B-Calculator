@@ -3,12 +3,7 @@ import java.util.Arrays;
 
 public class Logic {
 
-    public Logic() // An empty constructor
-    {
-
-    }
-
-    public double stringToNumberCalc(String input) // the main logic for the calculator.
+    public static double stringToNumberCalc(String input) // the main logic for the calculator.
     {
         int operatorLength = input.length() + 1; // initializing the length of the operator array with the length of the input.
         double result = 0;
