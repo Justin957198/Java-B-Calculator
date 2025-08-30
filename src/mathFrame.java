@@ -167,20 +167,19 @@ public class mathFrame extends Logic implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        boolean equals = false;
 
 
-        if(e.getSource() == bOne)
+        if(e.getSource() == bOne) // the if statements on this level check id a button on the gui is pressed
         {
-            if(inputOutput.getText().length() > 0)
+            if(inputOutput.getText().length() > 0) // checks if the textfield isn't empty then adds the next chosen number to the textfield
             {
                 String buttonText = bOne.getText();
                 String addedInput = inputOutput.getText() + buttonText;
-                inputOutput.setText(addedInput);
+                inputOutput.setText(addedInput);// for more detail in order to have numbers bigger than 9 newly inputted numbers need to be added to the already established input
             }
             else
             {
-                String buttonText = bOne.getText();
+                String buttonText = bOne.getText(); // every button carries the number it needs to create, for instance the 1 button will always return 1 because it has a 1 on it
                 inputOutput.setText(buttonText);
             }
 
@@ -380,13 +379,13 @@ public class mathFrame extends Logic implements ActionListener {
         {
             inputOutput.setText("");
         }
-        else if(e.getSource() == bEquals)
+        else if(e.getSource() == bEquals) // the equals button is where the logical method is the las button pressed before the answer is given
         {
             String textInBox = inputOutput.getText();
-            if(textInBox.length() > 0)
+            if(textInBox.length() > 0) // checks if the text box is empty or not
             {
-                double answer = stringToNumberCalc(textInBox);
-                String text = Double.toString(answer);
+                double answer = stringToNumberCalc(textInBox); // gets the answer from the logic function
+                String text = Double.toString(answer); // turns the double to a string to be displayed
                 String cleanText = "";
                 if(text.contains(".0"))
                 {
@@ -396,7 +395,7 @@ public class mathFrame extends Logic implements ActionListener {
                     cleanText = text;
                 }
 
-                inputOutput.setText(cleanText);
+                inputOutput.setText(cleanText); // sets the answer in the text box
             }
         }
     }

@@ -56,53 +56,53 @@ public class Logic {
                     iterator++; // the iterator variable will go through the numbers array
                 }
             }
-            if(operators[i] == '-')
+            if(operators[i] == '-') // checks if the operator is a minus sign
             {
-                if(notFirst)
+                if(notFirst) // if this isn't the first operation the result is subtracted from by the next number
                 {
                     result = result - numbers[iterator];
                     iterator++;
                 }
                 else {
-                    result = numbers[j] - numbers[j+1];
-                    notFirst = true;
-                    j++;
-                    iterator++;
+                    result = numbers[j] - numbers[j+1]; // if this is the first operation the first two numbers are operated on and a result is made
+                    notFirst = true; // now it's not the first operation
+                    j++; // increment the operators array
+                    iterator++; // increment the numbers array
                 }
             }
-            if(operators[i] == '/')
+            if(operators[i] == '/') // checks if the operator is a / division sign
             {
-                if(notFirst)
+                if(notFirst) // if this isn't the first operation the generated result is divided again
                 {
                     result = result / numbers[iterator];
                     iterator++;
                 }
                 else {
-                    result = numbers[j] / numbers[j+1];
-                    notFirst = true;
-                    j++;
-                    iterator++;
+                    result = numbers[j] / numbers[j+1]; // if this is the first operation the front two numbers are divided and a result is generated
+                    notFirst = true; // no longer the first operation
+                    j++; // increment the operations array
+                    iterator++; // increment the numbers array
                 }
             }
-            if(operators[i] == '*')
+            if(operators[i] == '*') // checks if the operator is a * multiplication sign
             {
-                if(notFirst)
+                if(notFirst) // if this isn't the first operation the result is multiplied
                 {
                     result = result * numbers[iterator];
                     iterator++;
                 }
                 else {
-                    result = numbers[j] * numbers[j+1];
-                    notFirst = true;
-                    j++;
-                    iterator++;
+                    result = numbers[j] * numbers[j+1]; // if this is the first operation the two front numbers are multiplied
+                    notFirst = true; // no longer the first operation
+                    j++; // increment the operators
+                    iterator++; // increments the numbers
                 }
             }
         }
-        System.out.println(input);
-        System.out.println(operators);
-        System.out.println(Arrays.toString(numbers)); // the three outputs are merely console commands for testing purposes.
-        double cleanResult = Math.round(result * 100.0) / 100.0;
+        System.out.println(input); // debugging: prints the input to the console
+        System.out.println(operators); // debugging: prints the operators array to console
+        System.out.println(Arrays.toString(numbers)); // debugging: prints out all numbers obtained from the input to console.
+        double cleanResult = Math.round(result * 100.0) / 100.0; // rounds the answer tothe nearest number, should probably be removed or fixed so answers can be exact
         return cleanResult; // the result changed to double is returned.
     }
 
