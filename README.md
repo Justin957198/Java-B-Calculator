@@ -14,5 +14,7 @@ Permissions. <br>
   No contributions will be accepted. <br>
 Future Plans <br>
   Bug fixes ... on going.
-  New feats ... formula tabs, better UI.
+  New feats ... formula tabs, better UI. <br>
+Special <br>
+  Inside the code there is a png for the calculator icon, this is used for the frame window and can be used to decorate the .exe file through  external means like Launch4j.
 
