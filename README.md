@@ -7,11 +7,11 @@ Instalation. <br>
   Intellij IDEA instructions:  <br>
 Input / output examples. <br>
 <img width="310" height="441" alt="image" src="https://github.com/user-attachments/assets/24b44e99-fbd9-440d-b966-672f3f1df2c2" /> <img width="304" height="435" alt="image" src="https://github.com/user-attachments/assets/855100da-189f-4db6-8501-242d7cd2658e" /> <br>
-  Each key can be pressed repeatably if need be an operator can then be chossen along with a second number once the equals "=" sign is pressed the calculation will execute, this can be chained with multiple numbers and operators.
+  Each key can be pressed repeatably if need be an operator can then be chossen along with a second number once the equals "=" sign is pressed the calculation will execute, this can be chained with multiple numbers and operators. <br>
 Permissions. <br>
   Author Justin957198 "Justin Johnson".
   Permmission to clone for your own machine and change things is granted.
-  No contributions will be accepted.
+  No contributions will be accepted. <br>
 Future Plans <br>
   Bug fixes ... on going.
   New feats ... formula tabs, better UI.
