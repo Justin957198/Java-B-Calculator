@@ -24,7 +24,7 @@ public class Logic {
         boolean doNotReapeat = false; // value used to determine weather this is the second operation being preformed.
         for(int i = 0; i < inputStream.length; i++)
         {
-            if(inputStream[0].equals("") && sign == '-' && doNotReapeat == false)
+            if(inputStream[0].equals("") && sign == '-' && !doNotReapeat)
             {
                 inputStream[1] = sign + inputStream[1];
                 doNotReapeat = true;
@@ -102,7 +102,7 @@ public class Logic {
         System.out.println(input); // debugging: prints the input to the console
         System.out.println(operators); // debugging: prints the operators array to console
         System.out.println(Arrays.toString(numbers)); // debugging: prints out all numbers obtained from the input to console.
-        double cleanResult = Math.round(result * 100.0) / 100.0; // rounds the answer tothe nearest number, should probably be removed or fixed so answers can be exact
+        double cleanResult = Math.round(result * 100.0) / 100.0; // rounds the answer to the nearest number, should probably be removed or fixed so answers can be exact
         return cleanResult; // the result changed to double is returned.
     }
 

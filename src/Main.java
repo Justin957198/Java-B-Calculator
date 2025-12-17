@@ -7,9 +7,5 @@ public class Main {
         // Logic low = new Logic();
 
 
-
-
-
-
     }
 }

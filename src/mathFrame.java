@@ -171,7 +171,7 @@ public class mathFrame extends Logic implements ActionListener {
 
         if(e.getSource() == bOne) // the if statements on this level check id a button on the gui is pressed
         {
-            if(inputOutput.getText().length() > 0) // checks if the textfield isn't empty then adds the next chosen number to the textfield
+            if(!inputOutput.getText().isEmpty()) // checks if the textfield isn't empty then adds the next chosen number to the textfield
             {
                 String buttonText = bOne.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -186,7 +186,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bTwo)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bTwo.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -199,7 +199,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bThree)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bThree.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -212,7 +212,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bMinus)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bMinus.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -225,7 +225,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bPlus)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bPlus.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -238,7 +238,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bFour)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bFour.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -251,7 +251,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bFive)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bFive.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -264,7 +264,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bSix)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bSix.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -277,7 +277,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bDivide)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bDivide.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -290,7 +290,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bSeven)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bSeven.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -303,7 +303,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bEight)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bEight.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -316,7 +316,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bNine)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bNine.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -329,7 +329,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bMultiply)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bMultiply.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -342,7 +342,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == bZero)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = bZero.getText();
                 String addedInput = inputOutput.getText() + buttonText;
@@ -364,7 +364,7 @@ public class mathFrame extends Logic implements ActionListener {
         }
         else if(e.getSource() == decimal)
         {
-            if(inputOutput.getText().length() > 0)
+            if(!inputOutput.getText().isEmpty())
             {
                 String buttonText = decimal.getText();
                 String addedInput = inputOutput.getText() + buttonText;
